@@ -5,41 +5,86 @@ import './information.css'
 function GeneralInformation() {
 	return (
 		<>
-			{/* ¿Qué es el Virtual Challenge? */}
-			<section className="information-section">
+			<section className="information-section information-section--hero">
 				<div className="information-section__inner">
 					<div className="information-section__content">
+						<span className="information-section__eyebrow">
+							Concurso de innovación docente
+						</span>
 						<h1 className="information-section__title">
 							¿Qué es el Virtual Challenge?
 						</h1>
 						<p className="information-section__text">
-							Es un concurso orientado a los docentes universitarios, que busca incentivar la creación de recursos educativos digitales, y las estrategias de enseñanza innovadoras con uso de TIC en el aula. Este año en su <span className="information-section__text--bold">VII versión</span> los invitamos a explorar su creatividad <span className="information-section__text--bold">Aquí y Ahora</span>, desarrollando al máximo su nivel de creatividad e innovación.
+							Es un concurso orientado a los docentes universitarios, que
+							busca incentivar la creación de recursos educativos digitales y
+							estrategias de enseñanza innovadoras con uso de TIC en el aula.
+							Este año, en su{' '}
+							<span className="information-section__text--bold">
+								VII versión
+							</span>
+							, los invitamos a explorar su creatividad{' '}
+							<span className="information-section__text--bold">
+								Aquí y Ahora
+							</span>
+							, desarrollando al máximo su nivel de creatividad e innovación.
 						</p>
 					</div>
-					<div className="information-section__image">
-						<img src={studentImg1} alt="Estudiante Virtual Challenge" />
+					<div className="information-section__visual">
+						<div className="information-section__image-card">
+							<img src={studentImg1} alt="Estudiante Virtual Challenge" />
+						</div>
+						<span
+							className="information-section__shape information-section__shape--one"
+							aria-hidden="true"
+						/>
+						<span
+							className="information-section__shape information-section__shape--two"
+							aria-hidden="true"
+						/>
 					</div>
 				</div>
 			</section>
 
-			{/* ¿Cuál es el objetivo? */}
 			<section className="objective-section">
 				<div className="objective-section__inner">
-					<div className="objective-section__image">
-						<img src={studentImg2} alt="Objetivo Virtual Challenge" />
+					<div className="objective-section__visual">
+						<div className="objective-section__image-shell">
+							<div className="objective-section__image-card">
+								<img src={studentImg2} alt="Objetivo Virtual Challenge" />
+							</div>
+						</div>
 					</div>
 					<div className="objective-section__content">
+						<span className="objective-section__eyebrow">
+							Reto con propósito
+						</span>
 						<h2 className="objective-section__title">
 							¿Cuál es el objetivo?
 						</h2>
 						<p className="objective-section__text">
-							Promover estrategias que fortalezcan la práctica docente a través de pedagogías innovadoras basadas en recursos educativos digitales que permitan incorporar las TIC, TAC y TEP, en pro de dar cumplimiento a nuestra estrategia <span className="objective-section__text--bold">#AquíYAhora</span> con la U3D y digital, y la formación de alta calidad implementando nuevas tendencias y realidades digitales.
+							Promover estrategias que fortalezcan la práctica docente a través
+							de pedagogías innovadoras basadas en recursos educativos
+							digitales que permitan incorporar las TIC, TAC y TEP, en pro de
+							dar cumplimiento a nuestra estrategia{' '}
+							<span className="objective-section__text--bold">
+								#AquíYAhora
+							</span>{' '}
+							con la U3D y digital, y la formación de alta calidad
+							implementando nuevas tendencias y realidades digitales.
 						</p>
+						<div className="objective-section__highlight">
+							<strong className="objective-section__highlight-title">
+								TIC, TAC y TEP en acción
+							</strong>
+							<p className="objective-section__highlight-text">
+								Ideas aplicables, creativas y con impacto real en la
+								experiencia de aprendizaje.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* ¿Qué estrategias pedagógicas... */}
 			<section className="strategies-header">
 				<h2 className="strategies-header__title">
 					¿Qué estrategias pedagógicas con uso de TIC se pueden utilizar?
@@ -49,37 +94,56 @@ function GeneralInformation() {
 			<section className="stages-section">
 				<div className="stages-section__inner">
 					<div className="stages-section__content">
-						<h3 className="stages-section__subtitle">
-							Etapas del concurso
-						</h3>
+						<h3 className="stages-section__subtitle">Etapas del concurso</h3>
 						<ol className="stages-section__list">
 							<li className="stages-section__item">
 								<span className="stages-section__number">Realiza la</span>
 								<span className="stages-section__bold">inscripción</span>
-								<span className="stages-section__number">por medio del formulario que se encuentra en este sitio.</span>
+								<span className="stages-section__number">
+									por medio del formulario que se encuentra en este sitio.
+								</span>
 							</li>
 							<li className="stages-section__item">
 								<span className="stages-section__bold">Desarrolla</span>
-								<span className="stages-section__number">la estrategia de producción intelectual con uso de tecnología educativa.</span>
+								<span className="stages-section__number">
+									la estrategia de producción intelectual con uso de tecnología
+									educativa.
+								</span>
 							</li>
 							<li className="stages-section__item">
-								<span className="stages-section__number">Implementa con estudiantes, al iniciar el semestre 2025-II.</span>
-								<span className="stages-section__bold">Se deben tomar evidencias y testimonios.</span>
+								<span className="stages-section__number">
+									Implementa con estudiantes, al iniciar el semestre 2025-II.
+								</span>
+								<span className="stages-section__bold">
+									Se deben tomar evidencias y testimonios.
+								</span>
 							</li>
 							<li className="stages-section__item">
 								<span className="stages-section__number">Luego debes</span>
 								<span className="stages-section__bold">documentar</span>
-								<span className="stages-section__number">brevemente las fases de desarrollo.</span>
+								<span className="stages-section__number">
+									brevemente las fases de desarrollo.
+								</span>
 							</li>
 							<li className="stages-section__item">
 								<span className="stages-section__number">Para finalizar,</span>
-								<span className="stages-section__bold">carga la información</span>
-								<span className="stages-section__number">a la plataforma</span>
-								<a href="#" className="stages-section__link">virtual</a>
-								<span className="stages-section__number">, en el curso que se habilitará para los docentes inscritos.</span>
+								<span className="stages-section__bold">
+									carga la información
+								</span>
+								<span className="stages-section__number">
+									a la plataforma
+								</span>
+								<a href="#" className="stages-section__link">
+									virtual
+								</a>
+								<span className="stages-section__number">
+									, en el curso que se habilitará para los docentes inscritos.
+								</span>
 							</li>
 						</ol>
-						<a href="#" className="stages-section__cta">Inscríbete</a>
+						<a href="#" className="stages-section__cta">
+							Inscríbete
+						</a>
 					</div>
 					<div className="stages-section__image">
 						<img src={studentImg1} alt="Etapas del concurso" />
@@ -87,16 +151,13 @@ function GeneralInformation() {
 				</div>
 			</section>
 
-			{/* ¿Cuáles son los premios? */}
 			<section className="prizes-section">
 				<div className="prizes-section__inner">
-					<h2 className="prizes-section__title">
-						¿Cuáles son los premios?
-					</h2>
+					<h2 className="prizes-section__title">¿Cuáles son los premios?</h2>
 					<p className="prizes-section__subtitle">
-						Los premios para la versión Nº 7 del Virtual Challenge, son:
+						Los premios para la versión Nº 7 del Virtual Challenge son:
 					</p>
-					
+
 					<div className="prizes-section__cards">
 						<div className="prize-card">
 							<div className="prize-card__header">
@@ -134,13 +195,14 @@ function GeneralInformation() {
 
 					<div className="prizes-section__note">
 						<p>
-							<span className="prizes-section__note--bold">*Todos</span> los docentes participantes que cumplan con las condiciones del concurso, obtendrán un certificado de participación.
+							<span className="prizes-section__note--bold">*Todos</span> los
+							docentes participantes que cumplan con las condiciones del
+							concurso obtendrán un certificado de participación.
 						</p>
 					</div>
 				</div>
 			</section>
 
-			{/* ¿Dónde puedes entregar tu recurso educativo? */}
 			<section className="delivery-section">
 				<div className="delivery-section__inner">
 					<div className="delivery-section__content">
@@ -148,7 +210,9 @@ function GeneralInformation() {
 							¿Dónde puedes entregar tu recurso educativo?
 						</h2>
 						<p className="delivery-section__text">
-							La estrategia se debe compartir por medio de la plataforma virtual, en la actividad denominada "Campus Challenge" que estará disponible en la fecha correspondiente.
+							La estrategia se debe compartir por medio de la plataforma
+							virtual, en la actividad denominada "Campus Challenge" que
+							estará disponible en la fecha correspondiente.
 						</p>
 					</div>
 					<div className="delivery-section__image">

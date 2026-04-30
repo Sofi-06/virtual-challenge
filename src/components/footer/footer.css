@@ -1,12 +1,12 @@
 .site-footer {
 	width: 100%;
 	background: #143243;
-	padding: 14px 24px 16px;
+	padding: 18px 24px 22px;
 	box-sizing: border-box;
 }
 
 .site-footer__inner {
-	min-height: 92px;
+	min-height: 132px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -16,7 +16,7 @@
 
 .site-footer__logo {
 	display: block;
-	width: 200px;
+	width: 320px;
 	height: auto;
 	object-fit: contain;
 }
@@ -27,20 +27,20 @@
 	}
 
 	.site-footer__inner {
-		min-height: 84px;
+		min-height: 114px;
 	}
 
 	.site-footer__logo {
-		width: 170px;
+		width: 260px;
 	}
 }
 
 @media (max-width: 560px) {
 	.site-footer__inner {
-		min-height: 76px;
+		min-height: 92px;
 	}
 
 	.site-footer__logo {
-		width: 148px;
+		width: 210px;
 	}
 }

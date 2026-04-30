@@ -1,7 +1,30 @@
 import logo from '../../assets/Identidad-Virtual-Challenge-24.png'
 import './navbar.css'
 
-function Navbar() {
+function Navbar({ currentPage = 'general-information' }) {
+	const navItems = [
+		{
+			href: '#informacion-general',
+			label: 'Información General',
+			page: 'general-information',
+		},
+		{
+			href: '#terminos-y-condiciones',
+			label: 'Términos y Condiciones',
+			page: 'terms-and-conditions',
+		},
+		{
+			href: '#fechas-importantes',
+			label: 'Fechas Importantes',
+			page: 'important-dates',
+		},
+		{
+			href: '#ediciones-anteriores',
+			label: 'Ediciones Anteriores',
+			page: 'previous-editions',
+		},
+	]
+
 	return (
 		<header className="site-header">
 			<div className="site-header__inner">
@@ -10,18 +33,20 @@ function Navbar() {
 				</a>
 
 				<nav className="site-header__nav" aria-label="Navegación principal">
-					<a className="nav-link" href="#informacion-general">
-						Información General
-					</a>
-					<a className="nav-link" href="#terminos-y-condiciones">
-						Términos y Condiciones
-					</a>
-					<a className="nav-link" href="#fechas-importantes">
-						Fechas Importantes
-					</a>
-					<a className="nav-link" href="#ediciones-anteriores">
-						Ediciones Anteriores
-					</a>
+					{navItems.map((item) => {
+						const isActive = item.page === currentPage
+
+						return (
+							<a
+								key={item.page}
+								className={`nav-link${isActive ? ' nav-link--active' : ''}`}
+								href={item.href}
+								aria-current={isActive ? 'page' : undefined}
+							>
+								{item.label}
+							</a>
+						)
+					})}
 				</nav>
 
 				<a className="site-header__cta" href="#inscribete">

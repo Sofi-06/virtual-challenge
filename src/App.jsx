@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   return (
     <main className="page-shell">
-      <Navbar />
+      <Navbar currentPage="general-information" />
       <GeneralInformation />
       <Footer />
     </main>
