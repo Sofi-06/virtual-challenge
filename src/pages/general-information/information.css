@@ -826,8 +826,8 @@
 	content: '';
 	position: absolute;
 	top: 0;
-	left: -2%;
-	right: -2%;
+	left: 0;
+	right: 0;
 	height: 176px;
 	background: url('../../assets/fondocurvo-132e3e.png') center top / 100% 100%
 		no-repeat;
@@ -924,8 +924,8 @@
 
 	.delivery-section::after {
 		top: 0;
-		left: -4%;
-		right: -4%;
+		left: 0;
+		right: 0;
 		height: 132px;
 	}
 
@@ -975,8 +975,8 @@
 
 	.delivery-section::after {
 		top: 0;
-		left: -6%;
-		right: -6%;
+		left: 0;
+		right: 0;
 		height: 90px;
 	}
 
